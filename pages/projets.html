@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes projets informatiques - Portfolio BTS Informatique">
+    <meta name="author" content="Votre Nom">
+
+    <!-- ===== TITRE DE LA PAGE ===== -->
+    <title>Mes Projets | Portfolio BTS Informatique</title>
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== FEUILLE DE STYLE ===== -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Mon Portfolio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="parcours.html" class="nav-link">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projets.html" class="nav-link active">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link">Veille</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         EN-TÊTE DE PAGE
+    ========================================= -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Mes Projets</h1>
+            <p class="page-subtitle">Découvrez mes réalisations et travaux pratiques</p>
+        </div>
+    </header>
+
+    <!-- ========================================
+         SECTION PROJETS
+    ========================================= -->
+    <section id="projets" class="section projets">
+        <div class="container">
+            <!-- Filtres des projets -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="scolaire">Scolaire</button>
+                <button class="filter-btn" data-filter="personnel">Personnel</button>
+                <button class="filter-btn" data-filter="stage">Stage</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Projet 1 - Portfolio -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/WhatsApp Image 2026-05-04 at 11.35.02.jpeg" alt="Portfolio"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder">
+                            <span>Portfolio</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://fransiay.github.io/mon-portfolio-v2/" class="project-link">Voir le site</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Conception d'un Portfolio</h3>
+                        <p class="project-description">
+                            Design et développement de mon portfolio professionnel. Un site responsive, moderne et
+                            optimisé
+                            pour présenter mon
+                            parcours et mes réalisations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://fransiay.github.io/mon-portfolio-v2/"
+                                class="btn btn-small btn-primary">Voir en ligne</a>
+                            <a href="https://github.com/fransiay/Portfolio"
+                                class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2 - SmartSchedule Web -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+
+                            <img src="../photo/smart.jpeg" alt="SmartSchedule">
+
+                        <div class="project-overlay">
+                            <a href="https://neo-solution.fr/" class="project-link">Visiter le site</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">SmartSchedule Web</h3>
+                        <p class="project-description">
+                            réalisation Application web moderne développée avec React, Vite et TypeScript permettant aux
+                            utilisateurs d’organiser efficacement leurs tâches et leur emploi du temps grâce à une
+                            interface intuitive et interactive.
+
+                        <ul class="project-features">
+                            <li>Gestion intelligente des tâches et priorités</li>
+                            <li>Génération automatique de planning</li>
+                            <li>Calendrier interactif avec drag-and-drop</li>
+                            <li>Tableau de bord analytique</li>
+                            <li>Synchronisation des données via API REST</li>
+                        </ul>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MySQL</span>
+
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">En cours</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Projet 3 - SmartSchedule Mobile -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #3b82f6, #2dd4bf);">
+                            <span style="color: white; font-weight: bold;">SmartSchedule Mobile</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Bientôt disponible</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">SmartSchedule Mobile</h3>
+                        <p class="project-description">
+                            Conception Application mobile développée avec React Native et Expo offrant une gestion de
+                            planning accessible partout avec synchronisation en temps réel avec la plateforme web.
+
+                            <li>Gestion des tâches en mobilité</li>
+                            <li>Notifications push et rappels automatiques</li>
+                            <li>Synchronisation en temps réel avec la plateforme web</li>
+                            <li>Calendrier optimisé mobile</li>
+                            <li>Accès rapide aux tâches prioritaires</li>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">En cours</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 4 - Snake -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/snake.gif" alt="Jeu Snake">
+                        <div class="project-overlay">
+                            <a href="https://fransiay.github.io/snake_web/" class="project-link" target="_blank"
+                                rel="noopener">Jouer</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Snake Game – Application Web</h3>
+                        <div class="project-description">
+                            <p>Jeu Snake complet avec interface rétro arcade :</p>
+                            <ul class="project-features">
+                                <li>Contrôle au clavier ou tactile</li>
+                                <li>Difficulté progressive avec la vitesse</li>
+                                <li>Classement (top 5 et médailles)</li>
+                                <li>Sauvegarde avec nom du joueur</li>
+                                <li>Plusieurs écrans (accueil, jeu, game over)</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript Vanilla</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">elementSdk</span>
+                            <span class="tech-tag">dataSdk</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://fransiay.github.io/snake_web/" class="btn btn-small btn-primary"
+                                target="_blank" rel="noopener">Jouer</a>
+                            <a href="https://github.com/fransiay/snake_web" class="btn btn-small btn-secondary"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Projet 5 - Chatbot -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: #1f2937;">
+                            <span style="color: white;">Chatbot IA</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Chatbot Intelligent</h3>
+                        <p class="project-description">
+                            Programmation d'un agent conversationnel. Projet axé sur le traitement du langage naturel et
+                            l'interaction
+                            utilisateur.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">API OpenAI</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-secondary">En cours...</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 6 - Site de ussd -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background-image: url('../photo/ussd.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://fransiay.github.io/site_voyage/" class="project-link">Explorer</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">USSD paiement Mobile</h3>
+                        <p class="project-description">
+                            USSD Payment App est une application Python simulant un service de paiement mobile via un
+                            système USSD inspiré des plateformes de Mobile Money utilisées en Afrique. Le projet permet
+                            aux utilisateurs d’interagir avec différents menus dynamiques afin d’effectuer des
+                            opérations financières directement depuis une interface console.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">OOP</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://fransiay.github.io/site_voyage/" <a
+                                href="https://github.com/fransiay/site_voyage"
+                                class=https://github.com/fransiay/ussd>GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 7 - Restaurant -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/restaurant.png" alt="Site Restaurant">
+                        <div class="project-overlay">
+                            <a href="https://fransiay.github.io/site_restaurant/" class="project-link">Voir le menu</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Nkuta - Restauration</h3>
+                        <p class="project-description">
+                            Nkunta Restaurant est un site web vitrine moderne conçu pour un restaurant gastronomique
+                            proposant une cuisine africaine, européenne et internationale. Développé en HTML, CSS et
+                            JavaScript, le projet met en avant une expérience utilisateur immersive grâce à un design
+                            élégant, une navigation fluide et un système interactif de filtrage des plats.
+                        <ul class="project-features">
+                            <li>Catalogue de plats avec filtres dynamiques </li>
+                            <li>Système de réservation en ligne</li>
+                            <li>Interface responsive et moderne</li>
+                            <li> Galerie interactive avec animations CSS</li>
+                            <li>Navigation fluide multi-pages </li>
+                        </ul>>
+                        </ul>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://fransiay.github.io/site_restaurant/"
+                                class="btn btn-small btn-primary">Visiter</a>
+                            <a href="https://github.com/fransiay/site_restaurant"
+                                class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 8 - Grace Divine -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/grace_divine.png" alt="Grace Divine">
+                        <div class="project-overlay">
+                            <a href="https://fransiay.github.io/beauty_academie/" class="project-link">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Grace Divine – Plateforme Web</h3>
+                        <div class="project-description">
+                            <p>Site vitrine moderne pour un institut de formation beauté, alliant luxe et performance :
+                            </p>
+                            <ul class="project-features">
+                                <li>Parcours utilisateur optimisé (Inscription & Réservation)</li>
+                                <li>Mise en valeur des offres (formations & prestations)</li>
+                                <li>Design élégant avec palette dorée et animations</li>
+                                <li>Indicateurs clés (taux de réussite, élèves formés)</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">UI/UX Design</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://fransiay.github.io/beauty_academie/"
+                                class="btn btn-small btn-primary">Visiter</a>
+                            <a href="https://github.com/fransiay/beauty_academie"
+                                class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 9 - Météo -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/image1.png" alt="Météo App">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+                            <span style="color: white; font-weight: bold;">Météo App</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Application Météo</h3>
+                        <p class="project-description">
+                            Météo Horizon est une application web météorologique moderne développée avec React et Vite,
+                            offrant la consultation météo en temps réel partout dans le monde. Elle propose la recherche
+                            de villes, la géolocalisation automatique, des prévisions sur 7 jours et des thèmes
+                            dynamiques adaptés aux conditions météo, le tout avec une interface responsive et immersive.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API Météo</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://application-m-t-o.vercel.app"
+                                class="btn btn-small btn-primary">Tester</a>
+                            <a href="https://github.com/fransiay/application-m-t-o"
+                                class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Projet 10 - Jeux Divers -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/image2.png" alt="">
+                        <div class="project-placeholder" style="background: #4b5563;">
+                            <span style="color: white;">Mini Jeux</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Espace Gaming</h3>
+                        <p class="project-description">
+                            Collection de mini-jeux développés pour pratiquer la logique de programmation et
+                            l'interaction
+                            utilisateur.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Canvas</span>
+                            <span class="tech-tag">Algorithmie</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://fransiay.github.io/snake_web/" class="btn btn-small btn-primary">Tester</a>
+                            <a href="https://github.com/fransiay/snake_web"
+                                class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Projet 11 - Busness privé -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/WhatsApp Image 2026-05-25 at 12.07.37.jpeg" alt="busness privé">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Voir le menu</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">stage</span>
+                        <h3 class="project-title">Busness Privé</h3>
+                        <p class="project-description">
+                            conception d'une application web full state avec mise en place des pages web
+                            de formulaire d'un serveur et d'un espace admin intégré à l'architecture du site de busness
+                            privé.
+
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/fransiay/site_restaurant"
+                                class="btn btn-small btn-secondary">Documents</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 12 - Widget Impériatec -->
+                <article class="project-card" data-category="stage" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/evenent.png" alt="Widget Event du Jour">
+                        <div class="project-overlay">
+                            <a href="https://project-nu-three-51.vercel.app/" class="project-link">Voir le widget</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel / Impériatec</span>
+                        <h3 class="project-title">Widget Événement du Jour</h3>
+                        <p class="project-description">
+                            Événement du Jour est un widget web moderne développé avec React, TypeScript et Node.js
+                            permettant d’afficher quotidiennement un événement historique, culturel ou festif à partir
+                            d’une API dynamique. Le projet a été conçu avec une architecture serverless optimisée pour
+                            les performances, l’accessibilité et l’intégration sur tout type de site web.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://project-one-beta-10.vercel.app/"
+                                class="btn btn-small btn-primary">Visiter</a>
+                            <a href="https://drive.google.com/drive/folders/1E2iuLq7dQ641Rf2YdjZXtKUozOklC_xn?usp=sharing"
+                                class="btn btn-small btn-secondary">Documents</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- widget citation  -->
+
+                <article class="project-card" data-category="stage" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/citation.png" alt="Widget citation">
+                        <div class="project-overlay">
+                            <a href="https://mon-projet-umber.vercel.app/" class="project-link">Voir le widget</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Stage/ Impériatec</span>
+                        <h3 class="project-title">Widget citation du Jour</h3>
+                        <p class="project-description">
+                            Développement d'un widget d'événements historiques quotidiens pour le site d'Impériatec.
+                            Intégration backend/frontend complète avec base de données PostgreSQL.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://mon-projet-umber.vercel.app/" class="btn btn-small btn-primary">Visiter</a>
+                            <a href="https://drive.google.com/drive/folders/18CRBCrN6WChasCMjNyNlsbmpUI_7PLhv?usp=sharing"
+                                class="btn btn-small btn-secondary">Documents</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- information -->
+                <article class="project-card" data-category="stage" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/image copy.png" alt="Widget USSD Paiement Mobile">
+                        <div class="project-overlay">
+                            <a href="https://apitube-date.vercel.app/" class="project-link">Voir le widget</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Stage / Impériatec</span>
+                        <h3 class="project-title">Widget information du jour</h3>
+                        <p class="project-description">
+                            Widget information du jour est une application web full-stack développée avec React, Node.js et Express permettant de consulter des articles d’actualité à partir d’une date spécifique via une API externe. Le projet met en avant une architecture moderne client/serveur, une récupération dynamique des données et une interface responsive pensée pour une expérience utilisateur fluide.
+
+                            Fonctionnalités principales
+                            Recherche d’articles par date
+                            Affichage dynamique des actualités
+                            Gestion des erreurs et états de chargement
+                            Ouverture des articles dans un nouvel onglet
+                            Interface responsive adaptée mobile et desktop
+
+                            Technologies utilisées
+                            React
+                            Node.js
+                            Express.js
+                            Axios
+                            JavaScript
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Axios</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://apitube-date.vercel.app/" class="btn btn-small btn-primary">Visiter</a>
+                            <a href="https://drive.google.com/drive/u/0/folders/18AIXgohWQRfpLIlRVWo3bXkv7jjnNg0T?hl=fr"
+                                class="btn btn-small btn-secondary">Documents</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- horoscope -->
+                <article class="project-card" data-category="stage" data-animate>
+                    <div class="project-image">
+                        <img src="../photo/image copy 2.png" alt="horoscope">
+                        <div class="project-overlay">
+                            <a href="https://daily-horoscope-widget-dkafpif2l-m6351694-6708s-projects.vercel.app/"
+                                class="project-link">Voir le widget</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">stage/ Impériatec</span>
+                        <h3 class="project-title">Widget horoscope du Jour</h3>
+                        <p class="project-description">
+                            Widget web moderne développé avec React et TypeScript permettant d’afficher quotidiennement
+                            des citations inspirantes, motivantes et culturelles via une interface élégante et responsive.
+                            Le projet met l’accent sur l’expérience utilisateur grâce à des animations fluides, un design
+                            minimaliste et une mise à jour dynamique du contenu.
+                        </p>
+                        <ul class="project-features">
+                            <li>Affichage dynamique de citations quotidiennes</li>
+                            <li>Génération aléatoire de citations inspirantes</li>
+                            <li>Interface moderne et responsive</li>
+                            <li>Animations fluides et transitions dynamiques</li>
+                            <li>Thème clair/sombre automatique</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://horoscope-app-rho.vercel.app"
+                                class="btn btn-small btn-primary">Visiter</a>
+                            <a href="https://drive.google.com/drive/folders/1E2iuLq7dQ641Rf2YdjZXtKUozOklC_xn?usp=sharing"
+                                class="btn btn-small btn-secondary">Documents</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Mon Portfolio</h3>
+                    <p class="footer-description">
+                        Étudiant en BTS SIO option SLAM, passionné par le développement web
+                        et les nouvelles technologies.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-nav-title">Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="mailto:siangsfransia@gmail.com" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOUTON FLOTTANT CV
+    ========================================= -->
+    <a href="../documents/cv.pdf" class="cv-floating-btn" download="CV_Fransia_Siangany.pdf"
+        aria-label="Télécharger mon CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Télécharger CV</span>
+    </a>
+
+    <!-- ===== SCRIPT JAVASCRIPT ===== -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

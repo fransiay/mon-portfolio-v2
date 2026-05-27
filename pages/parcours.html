@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon parcours scolaire et professionnel - Portfolio BTS Informatique">
+    <meta name="author" content="Votre Nom">
+    <title>Mon Parcours | Portfolio BTS Informatique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* ===== FILTRES COMPÉTENCES BTS SIO ===== */
+        .bts-filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 32px;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            border: 2px solid #6366f1;
+            background: transparent;
+            color: #6366f1;
+            border-radius: 999px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .filter-btn:hover {
+            background: #6366f1;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+        }
+
+        .filter-btn.active {
+            background: #6366f1;
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+        }
+
+        /* Animation hide/show cartes */
+        .bts-skill-card {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .bts-skill-card.hidden {
+            display: none;
+        }
+
+        .bts-skill-card.fade-out {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        /* Style pour les logos officiels */
+        .bts-skill-icon img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            filter: brightness(0) invert(1); /* Par défaut blanc pour aller avec le fond bleu */
+        }
+
+        /* Optionnel : Garder les couleurs originales si on retire le fond bleu */
+        .bts-skill-icon.original-color {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .bts-skill-icon.original-color img {
+            filter: none;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Mon Portfolio</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="parcours.html" class="nav-link active">Parcours</a></li>
+                <li class="nav-item"><a href="projets.html" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="veille.html" class="nav-link">Veille</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         EN-TÊTE DE PAGE
+    ========================================= -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Mon Parcours</h1>
+            <p class="page-subtitle">Mon parcours scolaire et mes expériences professionnelles</p>
+        </div>
+    </header>
+
+    <!-- ========================================
+         SECTION BTS SIO - Présentation
+    ========================================= -->
+    <section id="bts-sio" class="section bts-sio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Le BTS SIO</h2>
+                <p class="section-subtitle">Services Informatiques aux Organisations</p>
+            </div>
+
+            <div class="bts-intro" data-animate>
+                <p>
+                    Le <strong>BTS Services Informatiques aux Organisations</strong> est une formation en deux ans
+                    qui prépare aux métiers de l'informatique. Cette formation permet d'acquérir des compétences
+                    en développement, administration réseau, cybersécurité et gestion des systèmes informatiques.
+                </p>
+                <p>
+                    À partir de la deuxième année, les étudiants choisissent une spécialisation entre
+                    <strong>SLAM</strong> et <strong>SISR</strong>.
+                </p>
+            </div>
+
+            <div class="specialites-grid">
+                <!-- Carte SLAM -->
+                <div class="specialite-card slam" data-animate>
+                    <div class="specialite-header">
+                        <div class="specialite-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <div class="specialite-badge">SLAM</div>
+                    </div>
+                    <h3 class="specialite-title">Solutions Logicielles et Applications Métiers</h3>
+                    <p class="specialite-orientation">Orientation : Développement informatique</p>
+                    <div class="specialite-content">
+                        <div class="specialite-section">
+                            <h4>Compétences</h4>
+                            <ul>
+                                <li>Développement web</li>
+                                <li>Création d'applications</li>
+                                <li>Programmation</li>
+                                <li>Bases de données</li>
+                                <li>Maintenance d'applications</li>
+                            </ul>
+                        </div>
+                        <div class="specialite-section">
+                            <h4>Technologies</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Frameworks</span>
+                            </div>
+                        </div>
+                        <div class="specialite-section">
+                            <h4>Métiers</h4>
+                            <ul class="metiers-list">
+                                <li>Développeur web</li>
+                                <li>Développeur logiciel</li>
+                                <li>Analyste programmeur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte SISR -->
+                <div class="specialite-card sisr" data-animate>
+                    <div class="specialite-header">
+                        <div class="specialite-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                <line x1="6" y1="6" x2="6.01" y2="6" />
+                                <line x1="6" y1="18" x2="6.01" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="specialite-badge">SISR</div>
+                    </div>
+                    <h3 class="specialite-title">Solutions d'Infrastructure, Systèmes et Réseaux</h3>
+                    <p class="specialite-orientation">Orientation : Réseaux et administration système</p>
+                    <div class="specialite-content">
+                        <div class="specialite-section">
+                            <h4>Compétences</h4>
+                            <ul>
+                                <li>Administration de serveurs</li>
+                                <li>Gestion des réseaux</li>
+                                <li>Cybersécurité</li>
+                                <li>Maintenance des infrastructures</li>
+                                <li>Virtualisation</li>
+                            </ul>
+                        </div>
+                        <div class="specialite-section">
+                            <h4>Technologies</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">Windows Server</span>
+                                <span class="tech-tag">Cisco</span>
+                                <span class="tech-tag">VMware</span>
+                                <span class="tech-tag">Active Directory</span>
+                            </div>
+                        </div>
+                        <div class="specialite-section">
+                            <h4>Métiers</h4>
+                            <ul class="metiers-list">
+                                <li>Administrateur système</li>
+                                <li>Technicien réseau</li>
+                                <li>Technicien cybersécurité</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mon choix de spécialité -->
+            <div class="mon-choix" data-animate>
+                <div class="choix-header">
+                    <div class="choix-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <h3>Mon choix : <span class="choix-specialite">SLAM</span></h3>
+                </div>
+                <div class="choix-content">
+                    <p>J'ai choisi la spécialité <strong>BTS SIO SLAM</strong> car je suis particulièrement intéressé
+                        par le développement d'applications et la programmation.</p>
+                    <p>J'apprécie la création de solutions numériques, la conception de sites web et la résolution de
+                        problèmes techniques à travers le code.</p>
+                    <p>Cette spécialité me permet de développer mes compétences en <strong>HTML, CSS, JavaScript, PHP et
+                            bases de données</strong>, afin de me préparer à une carrière dans le développement web ou
+                        logiciel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION PARCOURS - Timeline
+    ========================================= -->
+    <section id="parcours" class="section parcours">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Formation & Expériences</h2>
+                <p class="section-subtitle">Les étapes clés de mon parcours</p>
+            </div>
+
+            <div class="timeline">
+                <!-- BTS SIO -->
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2026</span>
+                        <h3 class="timeline-title">BTS SIO - Option SLAM</h3>
+                        <p class="timeline-school">SCHOLIA - Thiais</p>
+                        <p class="timeline-description">Formation en Services Informatiques aux Organisations,
+                            spécialité Solutions Logicielles et Applications Métiers. Apprentissage du développement
+                            web, de la gestion de bases de données et de la programmation orientée objet.</p>
+                        <ul class="timeline-skills">
+                            <li>Développement web</li>
+                            <li>Base de données</li>
+                            <li>Programmation</li>
+                            <li>Gestion de projet</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 1 -->
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025-2026</span>
+                        <h3 class="timeline-title">Stage en entreprise</h3>
+                        <p class="timeline-school">Imperiatec - Ville</p>
+                        <p class="timeline-description">Stage de 6 semaines en développement web. Participation au
+                            développement d'applications internes, maintenance de sites existants et découverte du
+                            travail en équipe dans un environnement professionnel.</p>
+                        <ul class="timeline-skills">
+                            <li>Wix</li>
+                            <li>React TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Git</li>
+                            <li>Travail d'équipe</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3 class="timeline-title">Stage en entreprise</h3>
+                        <p class="timeline-school">Business privé - Ville</p>
+                        <p class="timeline-description">Stage de 5 semaines en développement web. Participation au
+                            développement d'applications internes, maintenance de sites existants et découverte du
+                            travail en équipe dans un environnement professionnel.</p>
+                        <ul class="timeline-skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>MySQL</li>
+                            <li>Figma</li>
+                            <li>Travail d'équipe</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Baccalauréat -->
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2023</span>
+                        <h3 class="timeline-title">Baccalauréat Scientifique</h3>
+                        <p class="timeline-school">Lycée Chaminade - Brazzaville</p>
+                        <p class="timeline-description">Filière scientifique axée sur les Sciences de la Vie et de la
+                            Terre, complétée par des enseignements solides en mathématiques et physique‑chimie.</p>
+                        <ul class="timeline-skills">
+                            <li>Biologie</li>
+                            <li>Physique‑chimie</li>
+                            <li>Mathématiques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Licence -->
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3 class="timeline-title">Licence 1 en Génie Informatique et réseau</h3>
+                        <p class="timeline-school">ESCAT - Brazzaville</p>
+                        <p class="timeline-description">Formation axée sur la conception d'applications,
+                            l'administration des réseaux et la maîtrise des systèmes informatiques, avec un enseignement
+                            solide en programmation, sécurité et gestion des infrastructures numériques.</p>
+                        <ul class="timeline-skills">
+                            <li>Algorithmique & programmation</li>
+                            <li>Réseaux informatiques – bases</li>
+                            <li>Mathématiques appliquées / Logique</li>
+                            <li>Électronique de base</li>
+                            <li>Architecture des ordinateurs</li>
+                            <li>Électricité</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BEPC -->
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2019</span>
+                        <h3 class="timeline-title">Brevet d'Études du Premier Cycle</h3>
+                        <p class="timeline-school">La moisson - Brazzaville</p>
+                        <p class="timeline-description">Diplôme validant la fin du premier cycle, avec une formation
+                            générale solide en mathématiques, français, sciences et histoire‑géographie.</p>
+                        <ul class="timeline-skills">
+                            <li>Curiosité</li>
+                            <li>Autonomie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION COMPÉTENCES
+    ========================================= -->
+    <section id="competences" class="section competences">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Compétences</h2>
+                <p class="section-subtitle">Technologies et savoir-faire acquis au cours de ma formation</p>
+            </div>
+
+            <div class="competences-grid">
+                <!-- Compétences Techniques -->
+                <div class="competences-category" data-animate>
+                    <h3 class="category-title">Compétences Techniques</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Compétences BTS SIO avec FILTRES ===== -->
+                <div class="competences-category" data-animate>
+                    <h3 class="category-title">Compétences BTS SIO</h3>
+
+                    <!-- Barre de filtres -->
+                    <div class="bts-filter-bar" role="group" aria-label="Filtrer les compétences BTS SIO">
+                        <button class="filter-btn active" data-filter="all">Toutes</button>
+                        <button class="filter-btn" data-filter="langages">Langages</button>
+                        <button class="filter-btn" data-filter="technologies">Technologies</button>
+                        <button class="filter-btn" data-filter="logiciels">Logiciels</button>
+                    </div>
+
+                    <div class="bts-skills" id="bts-skills-grid">
+                        <!-- Langages -->
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                            </div>
+                            <h4>PHP 8</h4>
+                            <p>Maîtrise de la programmation orientée objet et backend.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            </div>
+                            <h4>Python</h4>
+                            <p>Scripts d'automatisation et analyse de données.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            </div>
+                            <h4>JavaScript</h4>
+                            <p>Développement de scripts côté client et logique dynamique.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            </div>
+                            <h4>SQL / MySQL</h4>
+                            <p>Conception et manipulation de bases de données relationnelles.</p>
+                        </div>
+
+                        <!-- Technologies -->
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            </div>
+                            <h4>React.js</h4>
+                            <p>Création d'interfaces utilisateur modernes et réactives.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                            </div>
+                            <h4>Laravel</h4>
+                            <p>Développement rapide d'applications web avec PHP.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                            </div>
+                            <h4>Tailwind CSS</h4>
+                            <p>Conception d'interfaces modernes et responsives.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.simpleicons.org/expo/000000" alt="Expo">
+                            </div>
+                            <h4>Expo</h4>
+                            <p>Développement d'applications mobiles cross-platform avec React Native.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+                            </div>
+                            <h4>API REST</h4>
+                            <p>Tests et intégration d'API avec Postman.</p>
+                        </div>
+
+                        <!-- Logiciels -->
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            </div>
+                            <h4>Git / GitHub</h4>
+                            <p>Gestion de version et collaboration sur le code.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA">
+                            </div>
+                            <h4>IntelliJ IDEA</h4>
+                            <p>Environnement de développement pour Java et le développement d'applications.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="../photo/staruml.png" alt="StarUML">
+                            </div>
+                            <h4>StarUML</h4>
+                            <p>Modélisation de diagrammes UML et conception logicielle.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                            </div>
+                            <h4>Figma</h4>
+                            <p>Maquettage UI/UX et prototypage d'applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Mon Portfolio</h3>
+                    <p class="footer-description">Étudiant en BTS SIO option SLAM, passionné par le développement web et
+                        les nouvelles technologies.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-nav-title">Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/fransia-siangany-38ba16347/" class="social-link"
+                            target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/fransiay" class="social-link" target="_blank" rel="noopener"
+                            aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="mailto:siangsfransia@gmail.com" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOUTON FLOTTANT CV
+    ========================================= -->
+    <a href="../documents/cv.pdf" class="cv-floating-btn" download="CV_Fransia_Siangany.pdf" aria-label="Télécharger mon CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Télécharger CV</span>
+    </a>
+
+    <!-- ===== SCRIPT JAVASCRIPT ===== -->
+    <script src="../js/script.js"></script>
+
+    <!-- ===== SCRIPT FILTRES BTS SIO ===== -->
+    <script>
+        (function () {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.bts-skill-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Mettre à jour le bouton actif
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.dataset.filter;
+
+                    cards.forEach(card => {
+                        const category = card.dataset.category;
+                        const show = filter === 'all' || category === filter;
+
+                        if (show) {
+                            card.classList.remove('hidden');
+                            // Forcer le reflow pour que la transition s'applique
+                            void card.offsetWidth;
+                            card.classList.remove('fade-out');
+                        } else {
+                            card.classList.add('fade-out');
+                            // Masquer après la transition
+                            card.addEventListener('transitionend', function handler() {
+                                if (card.classList.contains('fade-out')) {
+                                    card.classList.add('hidden');
+                                }
+                                card.removeEventListener('transitionend', handler);
+                            });
+                        }
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

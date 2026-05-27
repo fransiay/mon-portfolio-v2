@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ma veille technologique - IA et modélisation 3D pour le jeu vidéo">
+    <meta name="author" content="Votre Nom">
+
+    <!-- ===== TITRE DE LA PAGE ===== -->
+    <title>Veille Technologique | Portfolio BTS SIO</title>
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== FEUILLE DE STYLE ===== -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Mon Portfolio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="parcours.html" class="nav-link">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projets.html" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link active">Veille</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         EN-TÊTE DE PAGE
+    ========================================= -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Veille Technologique</h1>
+            <p class="page-subtitle">L'IA Générative : La nouvelle frontière de l'innovation numérique</p>
+        </div>
+    </header>
+
+    <!-- ========================================
+         INTRODUCTION - THÈME DE VEILLE
+    ========================================= -->
+    <section class="section veille-intro">
+        <div class="container">
+            <div class="veille-intro-grid">
+                <div class="veille-intro-image" data-animate>
+                    <img src="../photo/ia_main.png" alt="Intelligence Artificielle Générative"
+                        style="border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+                <div class="veille-intro-content" data-animate>
+                    <h2>Ma Veille : L'IA Générative</h2>
+                    <p>
+                        L'<strong>IA Générative</strong> ne se contente plus d'analyser des données, elle en crée de
+                        nouvelles : textes, images, code, sons et même vidéos. En tant qu'étudiant en développement
+                        (SLAM), je suis de près cette évolution qui transforme radicalement nos méthodes de travail et
+                        les capacités des logiciels que nous concevons.
+                    </p>
+
+                    <!-- Thèmes principaux -->
+                    <div class="veille-themes">
+                        <div class="veille-theme">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </span>
+                            <h4>Génération de Code</h4>
+                            <p>Assistance au développement (Copilot, Cursor)</p>
+                        </div>
+                        <div class="veille-theme">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                                    <path d="M12 2a10 10 0 0 1 10 10h-10V2z"></path>
+                                    <path d="M12 12L2.8 14.9"></path>
+                                </svg>
+                            </span>
+                            <h4>LLMs Multi-modaux</h4>
+                            <p>Modèles capables de comprendre texte et image</p>
+                        </div>
+                        <div class="veille-theme">
+                            <span class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                                    <line x1="7" y1="2" x2="7" y2="22"></line>
+                                    <line x1="17" y1="2" x2="17" y2="22"></line>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <line x1="2" y1="7" x2="7" y2="7"></line>
+                                    <line x1="2" y1="17" x2="7" y2="17"></line>
+                                    <line x1="17" y1="17" x2="22" y2="17"></line>
+                                    <line x1="17" y1="7" x2="22" y2="7"></line>
+                                </svg>
+                            </span>
+                            <h4>Vidéo et Audio</h4>
+                            <p>Création de contenu dynamique par IA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 1 - DOMAINES TOUCHÉS
+    ========================================= -->
+    <section id="domaines" class="section veille-domaines">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Domaines Impactés</h2>
+                <p class="section-subtitle">L'IA générative s'immisce dans toutes les industries</p>
+            </div>
+
+            <div class="domaines-grid">
+                <!-- Développement et IT -->
+                <div class="domaine-card" data-animate>
+                    <div class="domaine-image">
+                        <img src="../photo/ia_dev.png" alt="IA et Développement"
+                            style="width: 100%; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
+                    </div>
+                    <h3>Développement et IT</h3>
+                    <p>L'IA génère du code, identifie des bugs et aide à la documentation. Des outils comme GitHub
+                        Copilot augmentent la productivité des développeurs de plus de 50% sur les tâches répétitives.
+                    </p>
+                </div>
+
+                <!-- Santé et Sciences -->
+                <div class="domaine-card" data-animate>
+                    <div class="domaine-image">
+                        <img src="../photo/ia_health.png" alt="IA et Santé"
+                            style="width: 100%; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
+                    </div>
+                    <h3>Santé et Sciences</h3>
+                    <p>Accélération de la recherche de nouveaux médicaments et analyse de données médicales complexes.
+                        L'IA aide à prédire le repliement des protéines (AlphaFold).</p>
+                </div>
+
+                <!-- Création et Design -->
+                <div class="domaine-card" data-animate>
+                    <div class="domaine-image">
+                        <img src="../photo/ia_design.png" alt="IA et Design"
+                            style="width: 100%; border-radius: var(--border-radius-md); margin-bottom: var(--spacing-md);">
+                    </div>
+                    <h3>Création et Design</h3>
+                    <p>Publicité, cinéma et jeux vidéo utilisent l'IA pour le concept art, le texturage et la génération
+                        de décors, réduisant les délais de production de manière spectaculaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 2 - ARTICLES ET ACTUALITÉS
+    ========================================= -->
+    <section class="section veille-articles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Articles et Actualités Récentes</h2>
+            </div>
+
+            <div class="articles-grid">
+                <article class="article-card" data-animate>
+                    <div class="article-date">Avril 2024</div>
+                    <h3>OpenAI dévoile Sora</h3>
+                    <p>Sora est capable de générer des vidéos hyper-réalistes d'une minute à partir d'un simple prompt
+                        texte, ouvrant une nouvelle ère pour le cinéma et le marketing.</p>
+                    <a href="https://openai.com/sora" target="_blank" class="article-link">Lire la suite →</a>
+                </article>
+
+                <article class="article-card" data-animate>
+                    <div class="article-date">Mars 2024</div>
+                    <h3>Mistral AI : Le champion français</h3>
+                    <p>Mistral AI continue de rivaliser avec les géants américains avec la sortie de modèles "Open
+                        Weights" extrêmement performants comme Mistral Large.</p>
+                    <a href="https://mistral.ai/news/announcing-mistral-large/" target="_blank"
+                        class="article-link">Lire la suite →</a>
+                </article>
+
+                <article class="article-card" data-animate>
+                    <div class="article-date">Février 2024</div>
+                    <h3>Gemini 1.5 Pro par Google</h3>
+                    <p>Google annonce un modèle capable de traiter jusqu'à 1 million de tokens, permettant d'analyser
+                        des livres entiers ou des heures de vidéo d'un coup.</p>
+                    <a href="https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/"
+                        target="_blank" class="article-link">Lire la suite →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Image Générée -->
+    <div class="multimedia-image" data-animate>
+        <img src="../photo/ia_multimedia.png" alt="IA et Création Multimédia"
+            style="border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); width: 100%;">
+        <div class="image-info">
+            <h4>Le Futur du Montage Vidéo</h4>
+            <p>Illustration de l'IA comme assistant de création visuelle et sonore.</p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 4 - FLUX D'ACTUALITÉS EN TEMPS RÉEL
+    ========================================= -->
+    <section class="section veille-realtime">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Flux d'Actualités en Temps Réel</h2>
+                <p class="section-subtitle">Dernières dépêches du monde de l'IA (Mai 2026)</p>
+            </div>
+
+            <div class="news-ticker-container" data-animate>
+                <div class="news-ticker">
+                    <div class="news-item">
+                        <span class="news-badge">NOUVEAU</span>
+                        <span class="news-text"><strong>OpenAI GPT-5.5 :</strong> Le modèle devient un agent proactif
+                            capable d'exécuter des tâches autonomes complexes.</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">INDUSTRIE</span>
+                        <span class="news-text"><strong>Adobe Expansion :</strong> Partenariats avec AWS, Anthropic et
+                            NVIDIA pour unifier l'expérience client via l'IA agentique.</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">FLASH</span>
+                        <span class="news-text"><strong>Qonto :</strong> La licorne intègre ses premiers agents IA pour
+                            l'analyse de données bancaires.</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">JURIDIQUE</span>
+                        <span class="news-text"><strong>Procès OpenAI :</strong> Elon Musk vs Sam Altman, le procès
+                            entre dans sa deuxième semaine en Californie.</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">SANTÉ</span>
+                        <span class="news-text"><strong>AlphaFold 3 :</strong> Nouvelles percées dans la recherche
+                            thérapeutique assistée par IA générative.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="live-feed-grid">
+                <div class="feed-column">
+                    <div class="feed-card" data-animate>
+                        <div class="feed-header">
+                            <span class="feed-dot"></span>
+                            <span class="feed-title">Direct Tech</span>
+                        </div>
+                        <ul class="feed-list">
+                            <li>
+                                <span class="feed-time">14:30</span>
+                                <p><strong>Apple</strong> annonce l'intégration native de LLMs multimodaux dans iOS
+                                    19.5.</p>
+                            </li>
+                            <li>
+                                <span class="feed-time">12:15</span>
+                                <p><strong>Mistral AI</strong> dépasse les attentes avec son nouveau modèle "Le Chat"
+                                    pour développeurs.</p>
+                            </li>
+                            <li>
+                                <span class="feed-time">09:00</span>
+                                <p>Lancement du <strong>Blackwell B200</strong> de NVIDIA pour les centres de données
+                                    souverains.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed-column">
+                    <div class="feed-card" data-animate>
+                        <div class="feed-header">
+                            <span class="feed-dot" style="background-color: #f59e0b;"></span>
+                            <span class="feed-title">Direct Marché</span>
+                        </div>
+                        <ul class="feed-list">
+                            <li>
+                                <span class="feed-time">15:10</span>
+                                <p>Fusion annoncée entre <strong>Cohere</strong> et l'allemand <strong>Aleph
+                                        Alpha</strong> pour une IA européenne.</p>
+                            </li>
+                            <li>
+                                <span class="feed-time">11:45</span>
+                                <p>Stripe déploie des agents IA pour la gestion automatisée des litiges financiers.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 5 - SOURCES DE VEILLE
+    ========================================= -->
+    <section class="section veille-sources">
+
+
+        <div class="sources-grid">
+            <div class="source-item" data-animate>
+                <div class="source-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </div>
+                <h4>Sites Officiels</h4>
+                <ul>
+                    <li><a href="https://openai.com/blog" target="_blank">OpenAI Blog</a></li>
+                    <li><a href="https://mistral.ai/news/" target="_blank">Mistral AI News</a></li>
+                    <li><a href="https://deepmind.google/blog/" target="_blank">Google DeepMind</a></li>
+                </ul>
+            </div>
+            <div class="source-item" data-animate>
+                <div class="source-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 11a9 9 0 0 1 9 9"></path>
+                        <path d="M4 4a16 16 0 0 1 16 16"></path>
+                        <circle cx="5" cy="19" r="1"></circle>
+                    </svg>
+                </div>
+                <h4>Presse Tech</h4>
+                <ul>
+                    <li><a href="https://www.lemondeinformatique.fr/" target="_blank">Le Monde Informatique</a></li>
+                    <li><a href="https://techcrunch.com/category/artificial-intelligence/" target="_blank">TechCrunch
+                            AI</a></li>
+                    <li><a href="https://www.zdnet.fr/intelligence-artificielle/" target="_blank">ZDNet France</a></li>
+                </ul>
+            </div>
+            <div class="source-item" data-animate>
+                <div class="source-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </div>
+                <h4>Réseaux Professionnels</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn (Influenceurs IA)</a></li>
+                    <li><a href="https://twitter.com" target="_blank">X (Listes de chercheurs IA)</a></li>
+                    <li><a href="https://github.com/trending" target="_blank">GitHub Trending</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Mon Portfolio</h3>
+                    <p class="footer-description">
+                        Étudiant en BTS SIO option SLAM, passionné par le développement web
+                        et les nouvelles technologies.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-nav-title">Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Mon Portfolio. Tous droits reserves.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOUTON FLOTTANT CV
+    ========================================= -->
+    <a href="../documents/cv.pdf" class="cv-floating-btn" download="CV_Fransia_Siangany.pdf"
+        aria-label="Telecharger mon CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Telecharger CV</span>
+    </a>
+
+    <!-- ===== SCRIPT JAVASCRIPT ===== -->
+    <!-- ========================================
+         SCRIPTS DYNAMIQUES (API)
+    ========================================= -->
+    <script>
+        // Configuration
+        const NEWS_RSS_URL = "https://news.google.com/rss/search?q=IA+g%C3%A9n%C3%A9rative+OR+Generative+AI&hl=fr&gl=FR&ceid=FR:fr";
+        const YT_CHANNELS = [
+            { name: "IA Générative", query: "ia+g%C3%A9n%C3%A9rative" }
+        ];
+
+        // Fonction pour formater la date
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        // Fonction pour récupérer les news via RSS2JSON
+        async function fetchRealTimeNews() {
+            try {
+                const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(NEWS_RSS_URL)}`);
+                const data = await response.json();
+
+                if (data.status === 'ok') {
+                    const items = data.items;
+
+                    // 1. Mise à jour du Ticker
+                    const ticker = document.querySelector('.news-ticker');
+                    if (ticker && items.length > 0) {
+                        ticker.innerHTML = '';
+                        items.slice(0, 8).forEach(item => {
+                            const newsItem = document.createElement('div');
+                            newsItem.className = 'news-item';
+                            newsItem.innerHTML = `
+                                <span class="news-badge">DIRECT</span>
+                                <span class="news-text"><strong>${item.author || 'Actualité'} :</strong> ${item.title}</span>
+                            `;
+                            ticker.appendChild(newsItem);
+                        });
+                    }
+
+                    // 2. Mise à jour du Feed Tech
+                    const techFeed = document.querySelector('.feed-column:first-child .feed-list');
+                    if (techFeed) {
+                        techFeed.innerHTML = '';
+                        items.slice(0, 4).forEach(item => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `
+                                <span class="feed-time">${formatDate(item.pubDate)}</span>
+                                <p><a href="${item.link}" target="_blank" style="color: inherit; text-decoration: none;"><strong>${item.title.split(' - ')[1] || 'Source'}</strong> : ${item.title.split(' - ')[0]}</a></p>
+                            `;
+                            techFeed.appendChild(li);
+                        });
+                    }
+                }
+            } catch (error) {
+                console.error("Erreur lors de la récupération des news:", error);
+            }
+        }
+
+        // Récupérer les dernières vidéos YouTube via une recherche RSS
+        async function fetchYouTubeVideos() {
+            // Utilisation d'un flux RSS de recherche YouTube via un proxy (si disponible) ou Google News Vidéos
+            // Ici, pour coller à la demande, on peut aussi lier le bouton "Voir plus" au lien fourni.
+            const targetUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent("https://news.google.com/rss/search?q=ia+g%C3%A9n%C3%A9rative+site:youtube.com&hl=fr&gl=FR&ceid=FR:fr")}`;
+
+            try {
+                const response = await fetch(targetUrl);
+                const data = await response.json();
+
+                if (data.status === 'ok') {
+                    const videos = data.items.slice(0, 3);
+                    const container = document.querySelector('.multimedia-grid');
+
+                    // On ajoute une section de suggestions si elle n'existe pas
+                    let suggestionBox = document.querySelector('.yt-suggestions');
+                    if (!suggestionBox) {
+                        suggestionBox = document.createElement('div');
+                        suggestionBox.className = 'yt-suggestions';
+                        suggestionBox.style.marginTop = '20px';
+                        suggestionBox.style.display = 'grid';
+                        suggestionBox.style.gridTemplateColumns = 'repeat(auto-fit, minmax(200px, 1fr))';
+                        suggestionBox.style.gap = '15px';
+                        container.after(suggestionBox);
+                    }
+
+                    suggestionBox.innerHTML = '<h4 style="grid-column: 1/-1; margin-bottom: 10px;">Dernières Vidéos Suggérées</h4>';
+
+                    videos.forEach(video => {
+                        const vCard = document.createElement('div');
+                        vCard.className = 'video-suggestion-card';
+                        vCard.style.cursor = 'pointer';
+                        vCard.innerHTML = `
+                            <img src="${video.thumbnail}" style="width: 100%; border-radius: 8px;">
+                            <p style="font-size: 12px; font-weight: 600; margin-top: 5px;">${video.title}</p>
+                        `;
+                        vCard.onclick = () => window.open(video.link, '_blank');
+                        suggestionBox.appendChild(vCard);
+                    });
+                }
+            } catch (error) {
+                console.log("Erreur YT:", error);
+            }
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchRealTimeNews();
+            fetchYouTubeVideos();
+            setInterval(fetchRealTimeNews, 600000);
+        });
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

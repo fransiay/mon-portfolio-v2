@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez-moi - Portfolio BTS Informatique">
+    <meta name="author" content="Votre Nom">
+
+    <!-- ===== TITRE DE LA PAGE ===== -->
+    <title>Contact | Portfolio BTS Informatique</title>
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== FEUILLE DE STYLE ===== -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Mon Portfolio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="parcours.html" class="nav-link">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projets.html" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link">Veille</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         EN-TÊTE DE PAGE
+    ========================================= -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Me Contacter</h1>
+            <p class="page-subtitle">N'hésitez pas à me contacter pour toute question ou opportunité</p>
+        </div>
+    </header>
+
+    <!-- ========================================
+         SECTION CONTACT
+    ========================================= -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Informations de contact -->
+                <div class="contact-info" data-animate>
+                    <h3>Restons en contact</h3>
+                    <p>
+                        Je suis actuellement à la recherche d'un stage ou d'une alternance
+                        en développement web. N'hésitez pas à me contacter si vous avez
+                        des opportunités ou simplement pour échanger.
+                    </p>
+
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:siangsfransia@gmail.com">siangsfransia@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Localisation -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Localisation</h4>
+                            <p>Sèvre, France</p>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/fransia-siangany-38ba16347/" target="_blank"
+                                rel="noopener">linkedin.com/in/ffransia-siangany</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form-wrapper" data-animate>
+                    <!-- Message de succès -->
+                    <div class="form-success" id="form-success">
+                        Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
+                    </div>
+
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvgzlowq" method="POST">
+                        <!-- Champ Nom -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom complet *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom"
+                                required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+
+                        <!-- Champ Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="votre.email@example.com" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+
+                        <!-- Champ Sujet -->
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Sujet *</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="Sujet de votre message" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+
+                        <!-- Champ Message -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-input" rows="5"
+                                placeholder="Votre message..." required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+
+                        <!-- Bouton de soumission -->
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Envoyer le message</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Mon Portfolio</h3>
+                    <p class="footer-description">
+                        Étudiant en BTS SIO option SLAM, passionné par le développement web
+                        et les nouvelles technologies.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-nav-title">Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/fransia-siangany-38ba16347/" class="social-link"
+                            target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/fransiays" class="social-link" target="_blank" rel="noopener"
+                            aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="mailto:siangsfransia@gmail.com" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOUTON FLOTTANT CV
+    ========================================= -->
+    <a href="../documents/cv.pdf" class="cv-floating-btn" download="CV_Fransia_Siangany.pdf" aria-label="Télécharger mon CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Télécharger CV</span>
+    </a>
+
+    <!-- ===== SCRIPT JAVASCRIPT ===== -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
